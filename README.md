@@ -9,3 +9,6 @@ yarn
 yarn build
 yarn serve
 ```
+
+or just do
+```yarn start :wink:```

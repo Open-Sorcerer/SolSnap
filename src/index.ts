@@ -1,4 +1,6 @@
-module.exports.onRpcRequest = async ({ origin, request }) => {
+import { OnRpcRequestHandler } from '@metamask/snap-types';
+
+export const onRpcRequest: OnRpcRequestHandler = ({ origin, request }) => {
   switch (request.method) {
     case 'hello':
       return wallet.request({
